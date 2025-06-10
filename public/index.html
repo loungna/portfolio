@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f172a" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Jirayut Loungna - System Analyst and Full-Stack Developer from Bangkok, Thailand. Specialized in Python, JavaScript, Machine Learning, and System Analysis." />
+    <meta name="keywords" content="Jirayut Loungna, System Analyst, Full-Stack Developer, Python, JavaScript, Machine Learning, NLP, React, Bangkok, Thailand" />
+    <meta name="author" content="Jirayut Loungna" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jirayut-portfolio.netlify.app/" />
+    <meta property="og:title" content="Jirayut Loungna - System Analyst & Full-Stack Developer" />
+    <meta property="og:description" content="Portfolio of Jirayut Loungna - System Analyst and Full-Stack Developer specialized in Python, JavaScript, Machine Learning, and System Analysis." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://jirayut-portfolio.netlify.app/" />
+    <meta property="twitter:title" content="Jirayut Loungna - System Analyst & Full-Stack Developer" />
+    <meta property="twitter:description" content="Portfolio of Jirayut Loungna - System Analyst and Full-Stack Developer specialized in Python, JavaScript, Machine Learning, and System Analysis." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Page Title -->
+    <title>Jirayut Loungna - System Analyst & Business Analyst</title>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Jirayut Loungna",
+      "url": "https://jirayut-portfolio.netlify.app/",
+      "image": "https://jirayut-portfolio.netlify.app/profile-image.jpg",
+      "jobTitle": "System Analyst & Business Analyst",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Cyber Crime Investigation Bureau"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "King Mongkut's University of Technology North Bangkok"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangkok",
+        "addressCountry": "Thailand"
+      },
+      "email": "loungna@hotmail.com",
+      "telephone": "+66 85 1204259",
+      "knowsAbout": [
+        "System Analysis",
+        "Business Analyst", 
+        "Python",
+        "JavaScript",
+        "React",
+        "Machine Learning",
+        "Natural Language Processing",
+        "Data Analysis"
+      ]
+    }
+    </script>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- CSS for loading state -->
+    <style>
+      /* Loading screen styles */
+      .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+      }
+      
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(59, 130, 246, 0.3);
+        border-top: 3px solid #3b82f6;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      .loading-text {
+        color: #e2e8f0;
+        margin-top: 20px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+      }
+      
+      /* Hide loading screen when page is loaded */
+      .loaded .loading-screen {
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- No JavaScript fallback -->
+    <noscript>
+      <div style="
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        background: #0f172a; 
+        color: #e2e8f0; 
+        font-family: 'Inter', sans-serif; 
+        text-align: center;
+        padding: 20px;
+      ">
+        <div>
+          <h1>JavaScript Required</h1>
+          <p>This portfolio website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
+          <p>If you need assistance, you can contact me directly at: <a href="mailto:loungna@hotmail.com" style="color: #3b82f6;">loungna@hotmail.com</a></p>
+        </div>
+      </div>
+    </noscript>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+      <div style="text-align: center;">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading Portfolio...</div>
+      </div>
+    </div>
+    
+    <!-- Main App Container -->
+    <div id="root"></div>
+    
+    <!-- Performance monitoring script -->
+    <script>
+      // Hide loading screen when page is fully loaded
+      window.addEventListener('load', function() {
+        document.body.classList.add('loaded');
+        setTimeout(function() {
+          const loadingScreen = document.getElementById('loading-screen');
+          if (loadingScreen) {
+            loadingScreen.style.display = 'none';
+          }
+        }, 500);
+      });
+      
+      // Web Vitals (optional - for performance monitoring)
+      if ('web-vitals' in window) {
+        import('web-vitals').then(({getCLS, getFID, getFCP, getLCP, getTTFB}) => {
+          getCLS(console.log);
+          getFID(console.log);
+          getFCP(console.log);
+          getLCP(console.log);
+          getTTFB(console.log);
+        });
+      }
+      
+      // Service Worker registration (optional - for PWA features)
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('SW registered: ', registration);
+            })
+            .catch(function(registrationError) {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
