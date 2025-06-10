@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -32,6 +33,8 @@ yarn-error.log*
 *.sln
 *.sw?
 
+=======
+>>>>>>> f22a3de340337dd329aa6f61a03147a04bb34367
 # Logs
 logs
 *.log
@@ -39,6 +42,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+<<<<<<< HEAD
+=======
+.pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+>>>>>>> f22a3de340337dd329aa6f61a03147a04bb34367
 
 # Runtime data
 pids
@@ -50,7 +60,11 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
+<<<<<<< HEAD
 coverage/
+=======
+coverage
+>>>>>>> f22a3de340337dd329aa6f61a03147a04bb34367
 *.lcov
 
 # nyc test coverage
@@ -69,10 +83,18 @@ bower_components
 build/Release
 
 # Dependency directories
+<<<<<<< HEAD
 jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
+=======
+node_modules/
+jspm_packages/
+
+# Snowpack dependency directory (https://snowpack.dev/)
+web_modules/
+>>>>>>> f22a3de340337dd329aa6f61a03147a04bb34367
 
 # TypeScript cache
 *.tsbuildinfo
@@ -83,6 +105,12 @@ typings/
 # Optional eslint cache
 .eslintcache
 
+<<<<<<< HEAD
+=======
+# Optional stylelint cache
+.stylelintcache
+
+>>>>>>> f22a3de340337dd329aa6f61a03147a04bb34367
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
@@ -98,9 +126,18 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+<<<<<<< HEAD
 # dotenv environment variables file
 .env
 .env.test
+=======
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+>>>>>>> f22a3de340337dd329aa6f61a03147a04bb34367
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -108,6 +145,10 @@ typings/
 
 # Next.js build output
 .next
+<<<<<<< HEAD
+=======
+out
+>>>>>>> f22a3de340337dd329aa6f61a03147a04bb34367
 
 # Nuxt.js build / generate output
 .nuxt
@@ -115,6 +156,7 @@ dist
 
 # Gatsby files
 .cache/
+<<<<<<< HEAD
 public
 
 # Storybook build outputs
@@ -138,3 +180,46 @@ temp/
 
 # OS
 Thumbs.db
+=======
+# Comment in the public line in if your project uses Gatsby and not Next.js
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# public
+
+# vuepress build output
+.vuepress/dist
+
+# vuepress v2.x temp and cache directory
+.temp
+.cache
+
+# vitepress build output
+**/.vitepress/dist
+
+# vitepress cache directory
+**/.vitepress/cache
+
+# Docusaurus cache and generated files
+.docusaurus
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+>>>>>>> f22a3de340337dd329aa6f61a03147a04bb34367

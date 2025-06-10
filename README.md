@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌟 Personal Portfolio Website
 
 A modern, responsive portfolio website built with React showcasing my journey from Computer Science to advanced Information Technology studies, professional certifications, and innovative projects.
@@ -157,3 +158,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 🔗 **Share** with fellow developers and students!
 
 📬 **Connect** with me for collaboration opportunities!
+=======
+# portfolio
+Personal portfolio website - System Analyst &amp; Business Analyst
+>>>>>>> f22a3de340337dd329aa6f61a03147a04bb34367
